@@ -30,8 +30,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: npm ci
-      - run: npm run build
+      - run: yarn install
+      - run: yarn build
       - uses: actions/upload-artifact@v2
         with:
           name: lua-compiled-code
