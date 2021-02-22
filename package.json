@@ -4,10 +4,8 @@
     "postbuild": "mtasa-utils-postbuild"
   },
   "devDependencies": {
-    "glob": "^7.1.6",
     "mtasa-lua-types": "^0.1.6",
     "mtasa-lua-utils": "^0.1.10",
-    "ts-node": "^9.1.1",
     "ttypescript": "^1.5.12",
     "typescript-to-lua": "^0.38.1"
   }
