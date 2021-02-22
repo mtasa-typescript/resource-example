@@ -1,0 +1,8 @@
+<meta>
+    <script src="vendor/lualib_bundle.lua" cache="false" type="shared"/>
+
+    <script src="lua/cinematic.lua" cache="false" type="client"/>
+    <script src="lua/controller.lua" cache="false" type="client"/>
+
+    <oop>true</oop>
+</meta>
