@@ -3,9 +3,8 @@ import {dxDrawLine3D} from "mtasa-lua-types/types/mtasa/client/function/drawing"
 import {addEventHandler, removeEventHandler} from "mtasa-lua-types/types/mtasa/client/function/event";
 import {outputChatBox} from "mtasa-lua-types/types/mtasa/client/function/output";
 import {bindKey} from "mtasa-lua-types/types/mtasa/client/function/input";
-import {iprint} from "mtasa-lua-types/types/mtasa/client/function/utility";
 import {getCameraMatrix} from "mtasa-lua-types/types/mtasa/client/function/camera";
-import {root, Vector3} from "../types/more";
+import {root, Vector3} from "../types/additional";
 
 const cameraPoints = new CameraPoints();
 
@@ -57,14 +56,8 @@ function renderPoints() {
     }
 }
 
-declare class debug {
-    /** @noSelf */
-    static traceback(): any;
-}
-
 bindKey('6', 'down', function () {
     cameraPoints.reset();
-    iprint(debug.traceback())
     addEventHandler('onClientPreRender', root, cameraFlow)
 }, null)
 

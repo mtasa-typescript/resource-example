@@ -1,5 +1,5 @@
 import {getEasingValue} from "mtasa-lua-types/types/mtasa/client/function/utility";
-import {EasingFunction, interpolateBetween, setCameraMatrix, Vector3, Vector3Type} from "../types/more";
+import {EasingFunction, interpolateBetween, setCameraMatrix, Vector3, Vector3Type} from "../types/additional";
 
 interface CameraPoint {
     camera: Vector3Type,
