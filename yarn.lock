@@ -89,6 +89,11 @@ is-core-module@^2.2.0:
   dependencies:
     has "^1.0.3"
 
+lua-types@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/lua-types/-/lua-types-2.8.0.tgz#4514f5c31b7418d3d6af0728023fefb160bc01b0"
+  integrity sha512-FJY32giHIqD/XW1XGkJnl8XotXIJsJ2M42fj9A2UudttWA6orJioToW1OpgPdayTr+S1/oTO7i+hfBY3UVG8Fg==
+
 make-error@^1.1.1:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
@@ -101,10 +106,14 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-mtasa-lua-types@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.1.6.tgz#8a266f1a98fe6c1950a05e409c32512a1e347fd5"
-  integrity sha512-FEQbmbIESmgYl0ie1KeK62zoItAo0Zh2h0nux838TelpQJs7Mne9S86RX22mOLvVJm5NQh9S8yw0R7652lMoig==
+mtasa-lua-types@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.1.9.tgz#247aed5c1d113ba826b490f3fca883e46120cd16"
+  integrity sha512-MkUtCRCcD9z2qhJe+kTAflmOGvLiAQiKmPsLwEsvZiSfqPeKuj+d+ZDZxJT20WfB7XlztDOdxoh/FuFXjwYRpA==
+  dependencies:
+    lua-types "^2.8.0"
+    typescript "^4.2.3"
+    typescript-to-lua "^0.39.0"
 
 mtasa-lua-utils@^0.1.10:
   version "0.1.10"
