@@ -115,10 +115,10 @@ mtasa-lua-types@^0.1.10:
     typescript "^4.2.3"
     typescript-to-lua "^0.39.0"
 
-mtasa-lua-utils@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-utils/-/mtasa-lua-utils-0.1.10.tgz#1fd296300b0a79464312abec9fd8b0fa2e6d2f6c"
-  integrity sha512-vnwWYDDLeB8ZhNnhvyIaDVUKdyPBMNwHRcFDvujIjuK0bYSkazxlfied2yULd0t4Ex3wmAwirG+hUoSfsfU1uA==
+mtasa-lua-utils@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-utils/-/mtasa-lua-utils-0.1.11.tgz#b9ec86f18f28132a349416c8882b85de79abae7e"
+  integrity sha512-ds56+7IlxpKrVDoyfPoA/QlPdrMqbdO6iY8L6l+tBfZt+IadjFsQVIGvVnXHCBLVAN7lB3RlCbsr7+4SWkvZOQ==
   dependencies:
     glob "^7.1.6"
 
