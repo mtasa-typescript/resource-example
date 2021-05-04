@@ -184,10 +184,10 @@ ttypescript@^1.5.12:
   dependencies:
     resolve ">=1.9.0"
 
-typescript-to-lua@^0.39.0, typescript-to-lua@^0.39.2:
-  version "0.39.2"
-  resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.39.2.tgz#628274fafe73b698d2d0df7ef61e3d5d3399e6e6"
-  integrity sha512-dTjPj6WknVd++ygH1dHTEpE6fFHFUBi5Fz+ZkHNbliysvlHNEiDO4I8mkOnOqmBU9m3A09HhyBqDMEsQd2AITg==
+typescript-to-lua@^0.39.0, typescript-to-lua@^0.39.3:
+  version "0.39.3"
+  resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.39.3.tgz#d272f4693e466ef42d19ae89e9c23cdad0f3770e"
+  integrity sha512-a9unziEbOc+sDT6ZeKLQV538WhX+rOaOCVjA/pvcjUs0oIESjEGM0HJnz/B3e1sUk/EtgU+b6bZKBcqKX1q4VQ==
   dependencies:
     resolve "^1.15.1"
     source-map "^0.7.3"
