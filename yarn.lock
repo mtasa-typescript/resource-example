@@ -106,10 +106,10 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-mtasa-lua-types@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.1.10.tgz#e3010614ea4d4222cee3942f8363c1c03ed408d4"
-  integrity sha512-GgCtA9ciucw5fHJRQzWNOnuOjORvQ2g7/oM02KQJZP1WqW9Fo6iL8ayBVS3dvggbWuvVdYWjWZs55dMn5oEKyw==
+mtasa-lua-types@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.4.1.tgz#7ce305b32a173c560d58f78e142323da0b3966a7"
+  integrity sha512-PIghghP8Ylu6OyApfw2t6LDiXpYCbOjZe4jo+4XujPXc4XWWG7+93Z6XRTfds6R8hbIjFEOz7mQKyZEL7CbZAg==
   dependencies:
     lua-types "^2.8.0"
     typescript "^4.2.3"
