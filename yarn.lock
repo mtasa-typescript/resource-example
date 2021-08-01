@@ -50,6 +50,14 @@ diff@^4.0.1:
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
+enhanced-resolve@^5.8.2:
+  version "5.8.2"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.8.2.tgz#15ddc779345cbb73e97c611cd00c01c1e7bf4d8b"
+  integrity sha512-F27oB3WuHDzvR2DOGNTaYy0D5o0cnrv8TeI482VM4kYgQd/FT9lUQwuNsJ0oOHtBUq7eiW5ytqzp7nBFknL+GA==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
 fast-glob@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.7.tgz#fd6cb7a2d7e9aa7a7846111e85a196d6b2f766a1"
@@ -91,6 +99,11 @@ glob-parent@^5.1.2:
   integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
+
+graceful-fs@^4.2.4:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
+  integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
 has@^1.0.3:
   version "1.0.3"
@@ -146,14 +159,14 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mtasa-lua-types@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.1.10.tgz#e3010614ea4d4222cee3942f8363c1c03ed408d4"
-  integrity sha512-GgCtA9ciucw5fHJRQzWNOnuOjORvQ2g7/oM02KQJZP1WqW9Fo6iL8ayBVS3dvggbWuvVdYWjWZs55dMn5oEKyw==
+mtasa-lua-types@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.5.0.tgz#5aa74a3ef380fb8bf86bc4610242a6a1b37990f8"
+  integrity sha512-XITRZFvAvxmsz0nyFA5WKCRuPkGNHn9Z8lV0AR/2vmyXqNE2sLk8xBGLkRDJFFctU1Z8aUkDVKUBuArLLsOP4A==
   dependencies:
     lua-types "^2.8.0"
     typescript "^4.2.3"
-    typescript-to-lua "^0.39.0"
+    typescript-to-lua "^0.41.0"
 
 mtasa-lua-utils@^0.2.0:
   version "0.2.0"
@@ -216,6 +229,11 @@ source-map@^0.7.3:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
+tapable@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.0.tgz#5c373d281d9c672848213d0e037d1c4165ab426b"
+  integrity sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
@@ -242,7 +260,7 @@ ttypescript@^1.5.12:
   dependencies:
     resolve ">=1.9.0"
 
-typescript-to-lua@^0.39.0, typescript-to-lua@^0.39.3:
+typescript-to-lua@^0.39.3:
   version "0.39.3"
   resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.39.3.tgz#d272f4693e466ef42d19ae89e9c23cdad0f3770e"
   integrity sha512-a9unziEbOc+sDT6ZeKLQV538WhX+rOaOCVjA/pvcjUs0oIESjEGM0HJnz/B3e1sUk/EtgU+b6bZKBcqKX1q4VQ==
@@ -251,10 +269,20 @@ typescript-to-lua@^0.39.0, typescript-to-lua@^0.39.3:
     source-map "^0.7.3"
     typescript ">=4.0.2"
 
-typescript@>=4.0.2, typescript@^4.2.3, typescript@^4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
-  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+typescript-to-lua@^0.41.0:
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.41.0.tgz#3b53f9d28f06dac5c4ff02b9dd57ad8095f25c8a"
+  integrity sha512-FCH0QVj8ls7zHfP3buXHRSLPrFnul+7O5O9s+myV4yTgWuOmSxSltz7T3mS/RHs1+Vd+xC0WP+7vCURbNKNwsg==
+  dependencies:
+    enhanced-resolve "^5.8.2"
+    resolve "^1.15.1"
+    source-map "^0.7.3"
+    typescript "~4.3.2"
+
+typescript@>=4.0.2, typescript@^4.2.3, typescript@^4.2.4, typescript@~4.3.2:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
 yn@3.1.1:
   version "3.1.1"
