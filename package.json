@@ -4,7 +4,7 @@
     "postbuild": "mtasa-utils-postbuild"
   },
   "devDependencies": {
-    "mtasa-lua-types": "^0.1.10",
+    "mtasa-lua-types": "^0.6.0",
     "mtasa-lua-utils": "^0.2.0",
     "ts-node": "^9.1.1",
     "ttypescript": "^1.5.12",

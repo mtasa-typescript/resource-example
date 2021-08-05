@@ -159,14 +159,14 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mtasa-lua-types@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.1.10.tgz#e3010614ea4d4222cee3942f8363c1c03ed408d4"
-  integrity sha512-GgCtA9ciucw5fHJRQzWNOnuOjORvQ2g7/oM02KQJZP1WqW9Fo6iL8ayBVS3dvggbWuvVdYWjWZs55dMn5oEKyw==
+mtasa-lua-types@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.6.0.tgz#f8cccd881a2b969e40a61a5bd77fa1e45be70498"
+  integrity sha512-Y3DLx3VzN0Oxn6OxH3JF8djNUsfBbKNdyO1g8G2Ha2uxqmADFAxf7RrLcrfCTJWRT/Oo6qveJbOC0vqrwU5xpQ==
   dependencies:
     lua-types "^2.8.0"
     typescript "^4.2.3"
-    typescript-to-lua "^0.39.0"
+    typescript-to-lua "^0.41.0"
 
 mtasa-lua-utils@^0.2.0:
   version "0.2.0"
@@ -260,16 +260,7 @@ ttypescript@^1.5.12:
   dependencies:
     resolve ">=1.9.0"
 
-typescript-to-lua@^0.39.0:
-  version "0.39.3"
-  resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.39.3.tgz#d272f4693e466ef42d19ae89e9c23cdad0f3770e"
-  integrity sha512-a9unziEbOc+sDT6ZeKLQV538WhX+rOaOCVjA/pvcjUs0oIESjEGM0HJnz/B3e1sUk/EtgU+b6bZKBcqKX1q4VQ==
-  dependencies:
-    resolve "^1.15.1"
-    source-map "^0.7.3"
-    typescript ">=4.0.2"
-
-typescript-to-lua@^0.41.1:
+typescript-to-lua@^0.41.0, typescript-to-lua@^0.41.1:
   version "0.41.1"
   resolved "https://registry.yarnpkg.com/typescript-to-lua/-/typescript-to-lua-0.41.1.tgz#6f2ce809f4896f9a39ae09d2fa4b294c4915ae49"
   integrity sha512-jxkadMdTU3JLHEdTMytsBcQA+ViGeGATFqvvl3+MyHLNdzg+NO4nb4QOn8JRlGKyVWKjoOmxDT50zXiu8OevMw==
@@ -279,7 +270,7 @@ typescript-to-lua@^0.41.1:
     source-map "^0.7.3"
     typescript "~4.3.2"
 
-typescript@>=4.0.2, typescript@^4.2.3, typescript@^4.2.4, typescript@~4.3.2:
+typescript@^4.2.3, typescript@^4.2.4, typescript@~4.3.2:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
