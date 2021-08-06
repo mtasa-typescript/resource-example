@@ -159,10 +159,10 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mtasa-lua-types@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.6.0.tgz#f8cccd881a2b969e40a61a5bd77fa1e45be70498"
-  integrity sha512-Y3DLx3VzN0Oxn6OxH3JF8djNUsfBbKNdyO1g8G2Ha2uxqmADFAxf7RrLcrfCTJWRT/Oo6qveJbOC0vqrwU5xpQ==
+mtasa-lua-types@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/mtasa-lua-types/-/mtasa-lua-types-0.6.1.tgz#2a95c646e0270e976f8dde5ebab17569c78090cc"
+  integrity sha512-HAhvnPwXSOtQNOL2ftA4imh0q5ZTKDeb4+kR8oISgipxQy7Whf/uFuRoDXbsLnMMw9v3reg77wla9ypITr/2pA==
   dependencies:
     lua-types "^2.8.0"
     typescript "^4.2.3"
