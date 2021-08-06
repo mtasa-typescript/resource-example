@@ -1,9 +1,10 @@
 import {getEasingValue} from "mtasa-lua-types/types/mtasa/client/function/utility";
-import {EasingFunction, interpolateBetween, setCameraMatrix, Vector3, Vector3Type} from "../types/additional";
+import {Vector3} from "mtasa-lua-types/types/mtasa/shared/vector";
+import {EasingFunction, interpolateBetween, setCameraMatrix, Vector3Type} from "../types/additional";
 
 interface CameraPoint {
-    camera: Vector3Type,
-    target: Vector3Type,
+    camera: Vector3,
+    target: Vector3,
     roll?: number,
     fov?: number,
 }
@@ -14,17 +15,17 @@ export class CameraPoints {
 
     points: CameraPoint[] = [
         {
-            camera: Vector3(2026.9888916016, 1133.0155029297, 54.381034851074),
-            target: Vector3(2047.4985351563, 1226.5667724609, 25.614406585693)
+            camera: new Vector3(2026.9888916016, 1133.0155029297, 54.381034851074),
+            target: new Vector3(2047.4985351563, 1226.5667724609, 25.614406585693)
         },
         {
-            camera: Vector3(2034.0051269531, 1267.76953125, 59.162208557129),
-            target: Vector3(2044.7204589844, 1363.8028564453, 33.417507171631),
+            camera: new Vector3(2034.0051269531, 1267.76953125, 59.162208557129),
+            target: new Vector3(2044.7204589844, 1363.8028564453, 33.417507171631),
             fov: 120
         },
         {
-            camera: Vector3(2043.6364746094, 1477.4366455078, 48.616836547852),
-            target: Vector3(2044.7252197266, 1570.83984375, 12.914506912231),
+            camera: new Vector3(2043.6364746094, 1477.4366455078, 48.616836547852),
+            target: new Vector3(2044.7252197266, 1570.83984375, 12.914506912231),
             roll: 30,
         },
     ]
@@ -40,15 +41,15 @@ export class CameraPoints {
      * @return Part of passed distance (0 - not passed, 1 - full passed)
      */
     getPassedDistancePart(): number {
-        const expectedDistance = this.points[this.pointId + 1].camera
+        const expectedDistance = (this.points[this.pointId + 1].camera as unknown as Vector3Type)
             .sub(this.points[this.pointId].camera)
             .getLength()
 
         return this.getDistance() / expectedDistance
     }
 
-    getCameraPosition(): Vector3Type {
-        return Vector3(...interpolateBetween(
+    getCameraPosition(): Vector3 {
+        return new Vector3(...interpolateBetween(
             this.points[this.pointId].camera,
             this.points[this.pointId + 1].camera,
             this.getPassedDistancePart(),
@@ -56,8 +57,8 @@ export class CameraPoints {
         ) as [number, number, number])
     }
 
-    getCameraLookAtPosition(): Vector3Type {
-        return Vector3(...interpolateBetween(
+    getCameraLookAtPosition(): Vector3 {
+        return new Vector3(...interpolateBetween(
             this.points[this.pointId].target,
             this.points[this.pointId + 1].target,
             this.getPassedDistancePart(),
@@ -104,7 +105,7 @@ export class CameraPoints {
     }
 
     private increaseTime(ms: number): void {
-        const expectedDistance = this.points[this.pointId + 1].camera
+        const expectedDistance = (this.points[this.pointId + 1].camera as unknown as Vector3Type)
             .sub(this.points[this.pointId].camera)
             .getLength()
 

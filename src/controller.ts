@@ -4,7 +4,8 @@ import {addEventHandler, removeEventHandler} from "mtasa-lua-types/types/mtasa/c
 import {outputChatBox} from "mtasa-lua-types/types/mtasa/client/function/output";
 import {bindKey} from "mtasa-lua-types/types/mtasa/client/function/input";
 import {getCameraMatrix} from "mtasa-lua-types/types/mtasa/client/function/camera";
-import {root, Vector3} from "../types/additional";
+import { Vector3 } from "mtasa-lua-types/types/mtasa/shared/vector";
+import { root } from "mtasa-lua-types/types/mtasa/client/mtasa";
 
 const cameraPoints = new CameraPoints();
 
@@ -23,8 +24,8 @@ bindKey('4', 'down', function () {
 bindKey('5', 'down', function () {
         const values = getCameraMatrix()
         cameraPoints.points.push({
-            camera: Vector3(values[0], values[1], values[2]),
-            target: Vector3(values[3], values[4], values[5])
+            camera: new Vector3(values[0], values[1], values[2]),
+            target: new Vector3(values[3], values[4], values[5])
         })
     },
     null)
