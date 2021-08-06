@@ -1,0 +1,7 @@
+{
+    "triggerTaskOnSave.tasks": {
+        "npm: build": ["src/**/*.ts"]
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.preferences.includePackageJsonAutoImports": "on"
+}

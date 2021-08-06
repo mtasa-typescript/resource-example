@@ -1,8 +1,6 @@
 .idea
 .vs
 node_modules
-
-# Maybe provide lua files in repository?..
 lua
 
 
